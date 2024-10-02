@@ -76,6 +76,8 @@ TGUI_Event tgui_sdl_convert_event(SDL_Event *sdl_event)
 				event.mouse.button = sdl_event->button.button;
 				event.mouse.x = (float)sdl_event->motion.x;
 				event.mouse.y = (float)sdl_event->motion.y;
+				event.mouse.dx = sdl_event->motion.xrel;
+				event.mouse.dy = sdl_event->motion.yrel;
 				event.mouse.normalised = false;
 				event.mouse.is_touch = false;
 				event.mouse.is_repeat = false;
