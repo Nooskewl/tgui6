@@ -15,6 +15,8 @@ TGUI_Event::TGUI_Event()
 	mouse.button = 0;
 	mouse.x = 0;
 	mouse.y = 0;
+	mouse.dx = 0;
+	mouse.dy = 0;
 	mouse.normalised = 0;
 
 	joystick.id = 0;
@@ -37,6 +39,8 @@ TGUI_Event::TGUI_Event(TGUI_Event const &x)
 	mouse.button = x.mouse.button;
 	mouse.x = x.mouse.x;
 	mouse.y = x.mouse.y;
+	mouse.dx = x.mouse.dx;
+	mouse.dy = x.mouse.dy;
 	mouse.normalised = x.mouse.normalised;
 	mouse.is_touch = x.mouse.is_touch;
 	mouse.finger = x.mouse.finger;
@@ -69,6 +73,8 @@ TGUI_Event &TGUI_Event::operator=(const TGUI_Event &x)
 	mouse.button = x.mouse.button;
 	mouse.x = x.mouse.x;
 	mouse.y = x.mouse.y;
+	mouse.dx = x.mouse.dx;
+	mouse.dy = x.mouse.dy;
 	mouse.normalised = x.mouse.normalised;
 	mouse.is_touch = x.mouse.is_touch;
 	mouse.finger = x.mouse.finger;
