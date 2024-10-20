@@ -956,7 +956,7 @@ void TGUI_Widget::set_break_line(bool break_line)
 void TGUI_Widget::set_accepts_focus(bool accepts_focus)
 {
 	this->accepts_focus = accepts_focus;
-	if (accepts_focus == false) {
+	if (gui && accepts_focus == false) {
 		if (gui->get_focus() == this) {
 			gui->focus_something();
 		}
