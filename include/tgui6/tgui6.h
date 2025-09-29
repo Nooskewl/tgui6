@@ -21,7 +21,7 @@
 #include <vector>
 
 #if defined __linux__ || defined __APPLE__ || defined __EMSCRIPTEN__
-#include <SDL2/SDL.h>
+#include <SDL3/SDL.h>
 #else
 #include <SDL.h>
 #endif

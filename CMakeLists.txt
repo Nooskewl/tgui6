@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.5)
 project(tgui6 CXX)
 
 option(SHARED "Build as a shared library" OFF)
@@ -15,7 +15,7 @@ link_directories(${USER_LIBRARY_PATH})
 
 set(SRC
 	src/tgui6.cpp
-	src/tgui6_sdl.cpp
+	src/tgui6_sdl3.cpp
 )
 
 if(WIN32 AND SHARED)

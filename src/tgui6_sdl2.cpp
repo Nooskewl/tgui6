@@ -1,7 +1,7 @@
 #include <cstring>
 
 #include "tgui6/tgui6.h"
-#include "tgui6/tgui6_sdl.h"
+#include "tgui6/tgui6_sdl2.h"
 
 TGUI_Event tgui_sdl_convert_event(SDL_Event *sdl_event)
 {
