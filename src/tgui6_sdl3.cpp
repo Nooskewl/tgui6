@@ -25,26 +25,26 @@ TGUI_Event tgui_sdl_convert_event(SDL_Event *sdl_event)
 			break;
 		case SDL_EVENT_GAMEPAD_BUTTON_DOWN:
 			event.type = TGUI_JOY_DOWN;
-			event.joystick.id = sdl_event->button.which;
-			event.joystick.button = sdl_event->button.button;
+			event.joystick.id = sdl_event->gbutton.which;
+			event.joystick.button = sdl_event->gbutton.button;
 			event.joystick.axis = -1;
 			event.joystick.value = 0.0f;
 			event.joystick.is_repeat = false;
 			break;
 		case SDL_EVENT_GAMEPAD_BUTTON_UP:
 			event.type = TGUI_JOY_UP;
-			event.joystick.id = sdl_event->button.which;
-			event.joystick.button = sdl_event->button.button;
+			event.joystick.id = sdl_event->gbutton.which;
+			event.joystick.button = sdl_event->gbutton.button;
 			event.joystick.axis = -1;
 			event.joystick.value = 0.0f;
 			event.joystick.is_repeat = false;
 			break;
 		case SDL_EVENT_GAMEPAD_AXIS_MOTION:
 			event.type = TGUI_JOY_AXIS;
-			event.joystick.id = sdl_event->jaxis.which;
+			event.joystick.id = sdl_event->gaxis.which;
 			event.joystick.button = -1;
-			event.joystick.axis = sdl_event->jaxis.axis;
-			event.joystick.value = TGUI6_NORMALISE_JOY_AXIS(sdl_event->jaxis.value);
+			event.joystick.axis = sdl_event->gaxis.axis;
+			event.joystick.value = TGUI6_NORMALISE_JOY_AXIS(sdl_event->gaxis.value);
 			event.joystick.is_repeat = false;
 			break;
 #ifndef TVOS
