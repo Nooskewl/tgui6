@@ -3,6 +3,9 @@
 
 #ifdef _WIN32
 #pragma warning(disable : 4251)
+#endif
+
+#ifdef _WIN32_NOPE
 #ifdef TGUI6_STATIC
 #define TGUI_EXPORT
 #else
