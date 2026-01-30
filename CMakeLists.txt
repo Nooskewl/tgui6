@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(tgui6 CXX)
 
-option(SHARED "Build as a shared library" OFF)
+option(SHARED "Build as a shared library" ON)
 option(DEBUG "Build for debugging" OFF)
 option(RASPBERRYPI "Build for Raspberry Pi" OFF)
 option(MAS "Build for Mac App Store" off)

@@ -5,7 +5,7 @@
 #pragma warning(disable : 4251)
 #endif
 
-#ifdef _WIN32_NOPE
+#ifdef _WIN32
 #ifdef TGUI6_STATIC
 #define TGUI_EXPORT
 #else
@@ -106,7 +106,7 @@ class TGUI {
 	friend TGUI_EXPORT void tgui_get_size(TGUI_Widget *parent, TGUI_Widget *widget, int *width, int *height, int *pad_l, int *pad_r, int *pad_t, int *pad_b);
 
 public:
-	static void set_focus_sloppiness(int sloppiness); // 0-2, default is 2, less means stricter rules to change focus
+	TGUI_EXPORT static void set_focus_sloppiness(int sloppiness); // 0-2, default is 2, less means stricter rules to change focus
 
 	TGUI_EXPORT TGUI(TGUI_Widget *main_widget, int w, int h);
 	TGUI_EXPORT ~TGUI();
