@@ -16,7 +16,11 @@
 #endif
 #endif
 #else
+#ifdef TGUI6_LIB_BUILD
+#define TGUI_EXPORT __attribute__((visibility("default"))) 
+#else
 #define TGUI_EXPORT
+#endif
 #endif
 
 #include <cassert>
