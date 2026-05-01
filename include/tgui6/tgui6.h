@@ -72,8 +72,8 @@ public:
 		int button;
 		float x;
 		float y;
-		int dx;
-		int dy;
+		float dx;
+		float dy;
 		bool normalised; // if true, x/y are between 0 and 1 and not in screen coordinates
 		bool is_touch;
 		SDL_FingerID finger;
