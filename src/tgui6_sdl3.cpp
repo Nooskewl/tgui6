@@ -123,7 +123,7 @@ TGUI_Event tgui_sdl_convert_event(SDL_Event *sdl_event)
 #endif
 		case SDL_EVENT_TEXT_INPUT:
 			event.type = TGUI_TEXT;
-			strcpy(event.text.text, sdl_event->text.text);
+			strcpy_s(event.text.text, 32, sdl_event->text.text);
 			break;
 		default:
 			event.type = TGUI_UNKNOWN;
