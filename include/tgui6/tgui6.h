@@ -154,7 +154,7 @@ class TGUI_Widget;
 
 class TGUI_EXPORT TGUI_Widget {
 	friend TGUI_EXPORT void tgui_get_size(TGUI_Widget *parent, TGUI_Widget *widget, int *width, int *height, int *pad_l, int *pad_r, int *pad_t, int *pad_b);
-	friend class TGUI_EXPORT TGUI;
+	friend class TGUI;
 
 public:
 	enum Fit {
