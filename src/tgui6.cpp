@@ -94,36 +94,6 @@ TGUI_Event &TGUI_Event::operator=(const TGUI_Event &x)
 
 	return *this;
 }
-/*
-TGUI_Event const &TGUI_Event::operator=(class TGUI_Event const &x)
-{
-	type = x.type;
-
-	keyboard.code = x.keyboard.code;
-	keyboard.is_repeat = x.keyboard.is_repeat;
-	keyboard.simulated = x.keyboard.simulated;
-
-	mouse.button = x.mouse.button;
-	mouse.x = x.mouse.x;
-	mouse.y = x.mouse.y;
-	mouse.normalised = x.mouse.normalised;
-	mouse.is_touch = x.mouse.is_touch;
-	mouse.finger = x.mouse.finger;
-	mouse.is_repeat = x.mouse.is_repeat;
-
-	joystick.id = x.joystick.id;
-	joystick.button = x.joystick.button;
-	joystick.axis = x.joystick.axis;
-	joystick.value = x.joystick.value;
-	joystick.is_repeat = x.joystick.is_repeat;
-
-	for (int i = 0; i < 32; i++) {
-		text.text[i] = x.text.text[i];
-	}
-
-	focus.type = x.focus_type;
-}
-*/
 
 TGUI_Event::~TGUI_Event()
 {
